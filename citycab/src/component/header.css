@@ -1,0 +1,21 @@
+.App-header {
+    background-color: #f7e7e7;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .App-logo {
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .App-header-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+  }
+  
