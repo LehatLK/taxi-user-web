@@ -1,10 +1,14 @@
+// SecondPage.js
 import React, { useState } from 'react';
-import './login.css';
-import { Link } from 'react-router-dom';
 
-function Login() {
+function SecondPage() {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -16,22 +20,28 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic here
+    // Handle form submission logic here
+    console.log("Name:", name);
     console.log("Email:", email);
     console.log("Password:", password);
-    alert('Button clicked!');
+    // You can add further processing, such as sending the data to a backend server
   };
 
   return (
-    <div className='loginContainer'>
-      <h2>Login</h2>
-      <button className="google-login-button" onClick={() => alert("Login with Google clicked")}>
-        Login with Google
-      </button>
+    <div>
+      <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div>
-        <input
-        className='email'
+          <input
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={handleNameChange}
+            required
+          />
+        </div>
+        <div>
+          <input
             type="email"
             placeholder="Email"
             value={email}
@@ -41,7 +51,6 @@ function Login() {
         </div>
         <div>
           <input
-          className='password'
             type="password"
             placeholder="Password"
             value={password}
@@ -49,19 +58,10 @@ function Login() {
             required
           />
         </div>
-        <button type="submit" className="login-button">Sign in</button> {/* Login button */}
+        <button type="submit">Sign Up</button>
       </form>
-      <div className='linksContainer'>
-      <a href="#"
-      className='forgotPassword'
-       onClick={() => alert('Forgotten password clicked')
-       }>Forgot your password?</a>
-      </div>
-      <div className='linksContainer'>
-        <Link to="/signUpPage" className='signupLink'> Don't have an account? Sign up</Link>
-        </div>
     </div>
   );
 }
 
-export default Login;
+export default SecondPage;

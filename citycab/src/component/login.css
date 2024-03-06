@@ -1,0 +1,61 @@
+
+.email,
+.password{
+    width: 40%;
+    margin: 10px auto;
+}
+.loginContainer{
+    text-align: center;
+}
+.linksContainer{
+    text-align: center;
+}
+.google-login-button {
+    background-color: #e9f0f4;
+    color: black;
+    width: 43%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto; /* Optional margin */
+  }
+  
+  .google-login-button:hover {
+    background-color: rgb(193, 193, 232);
+  }
+  .password {
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+  }
+  .email {
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+  }
+  .login-button {
+    width: 43%;
+    padding: 8px;
+    background-color: #ffb700;
+    border-radius: 5px;
+    font-size: 15px;
+
+  }
+  .forgotPassword, .signupLink {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Ensure each link appears on its own line */
+    margin-top: 10px; /* Add spacing between the links */
+  }
+  
+  .forgotPassword:hover, .signupLink:hover {
+    text-decoration: underline; /* Underline the link on hover */
+  }
+  
