@@ -1,6 +1,7 @@
 // SecondPage.js
 import React, { useState } from 'react';
 
+
 function SecondPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
