@@ -12,8 +12,8 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route exact path="/" component={Login} />
-          <Route path="/second-page" component={SecondPage} />
+        <Route exact path="/" element={<Login />} />
+        <Route path="/second-page" element={<SecondPage />} />
         </Routes>
       </div>
     </Router>
