@@ -1,0 +1,24 @@
+
+
+  .map-wrap {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Minska höjden för att ge mer plats */
+  }
+  
+  .map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Lägg till stil för zoomkontroller */
+  .leaflet-control-zoom {
+    margin: 10px; /* Justera avståndet till kanten */
+  }
+  
+  /* Lägg till stil för panorering */
+  .leaflet-control-container {
+    margin: 10px; /* Justera avståndet till kanten */
+  }
+  

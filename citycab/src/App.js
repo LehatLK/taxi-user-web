@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Header from './component/header';
 import Login from './component/login';
 import SecondPage from './component/signUpPage';
+import Map from './component/map.jsx';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route path="/second-page" element={<SecondPage />} />
+          <Route path="/map" element={<Map />} />
         </Routes>
       </div>
     </Router>
