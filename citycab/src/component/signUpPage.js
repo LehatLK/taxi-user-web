@@ -1,5 +1,6 @@
 // SecondPage.js
 import React, { useState } from 'react';
+import './signUpPage.css';
 
 function SecondPage() {
   const [name, setName] = useState('');
@@ -28,7 +29,8 @@ function SecondPage() {
   };
 
   return (
-    <div>
+    <div className='signupContainer'>
+      
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -38,6 +40,7 @@ function SecondPage() {
             value={name}
             onChange={handleNameChange}
             required
+            className='name'
           />
         </div>
         <div>
@@ -47,6 +50,7 @@ function SecondPage() {
             value={email}
             onChange={handleEmailChange}
             required
+            className='email'
           />
         </div>
         <div>
@@ -56,9 +60,23 @@ function SecondPage() {
             value={password}
             onChange={handlePasswordChange}
             required
+            className='password'
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <a href="#"
+      className='forgotPassword'
+       onClick={() => alert('Forgotten password clicked')
+       }>Forgot your password?</a>
+      <button type="submit" className='signup-button'>Sign Up</button>
+      <div> {/* Wrap the link in a div */}
+        <a
+          href="#"
+          className='mobilbankid'
+          onClick={() => alert('Forgotten password clicked')}
+        >
+          Or continue with Mobil BankID
+        </a>
+      </div>
       </form>
     </div>
   );

@@ -1,0 +1,43 @@
+/* SecondPage.css */
+
+.signupContainer {
+    text-align: center;
+  }
+  
+  .name,
+  .email,
+  .password {
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .signup-button {
+    width: 40%;
+    padding: 8px;
+    background-color: #ffb700;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .signup-button:hover {
+    background-color: #ffcc00;
+  }
+  
+  .forgotPassword,
+  .signupLink {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .forgotPassword:hover,
+  .signupLink:hover {
+    text-decoration: underline;
+  }
+  

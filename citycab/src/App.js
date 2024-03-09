@@ -13,7 +13,7 @@ function App() {
         <Header />
         <Routes>
         <Route exact path="/" element={<Login />} />
-        <Route path="/second-page" element={<SecondPage />} />
+        <Route exact path="/signup" element={<SecondPage />} />
         </Routes>
       </div>
     </Router>
@@ -22,9 +22,3 @@ function App() {
 }
 
 export default App;
-
-
-/*    <div className="App">
-      <Header />
-      < Login /> 
-    </div>*/
