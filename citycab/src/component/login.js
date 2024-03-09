@@ -58,7 +58,7 @@ function Login() {
        }>Forgot your password?</a>
       </div>
       <div className='linksContainer'>
-        <Link to="/signup" className='signupLink'>Don't have an account? Sign up</Link>
+        <Link to="/second-page" className='signupLink'>Don't have an account? Sign up</Link>
         </div>
     </div>
   );
