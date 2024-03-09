@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './signUpPage.css';
 
+
 function SecondPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
