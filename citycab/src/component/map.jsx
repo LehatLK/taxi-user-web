@@ -10,7 +10,7 @@ import { MaptilerLayer } from "@maptiler/leaflet-maptilersdk";
 const Map = () => {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const center = { lng: 13.338414, lat: 52.507932 };
+  const center = { lng: 18.05, lat: 59.325 };
   const [zoom] = useState(12);
 
   useEffect(() => {

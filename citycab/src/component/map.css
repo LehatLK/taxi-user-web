@@ -1,9 +1,7 @@
-
-
   .map-wrap {
     position: relative;
-    width: 100%;
-    height: 70vh; /* Minska höjden för att ge mer plats */
+    width: 60%;
+    height: 60vh; /* Minska höjden för att ge mer plats */
   }
   
   .map {

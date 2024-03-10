@@ -1,13 +1,13 @@
 import React from 'react';
+import './mappheader.css'; // Import the CSS file for styling
 
-function CustomHeader() {
+function MappHeader() {
   return (
-    <header >
-      <div >
-
-      </div>
+    <header className="header">
+      <div className="logo"></div>
+      {/* You can add more elements or components here */}
     </header>
   );
 }
 
-export default CustomHeader;
+export default MappHeader;

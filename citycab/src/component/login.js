@@ -21,7 +21,6 @@ function Login() {
     // Handle login logic here
     console.log("Email:", email);
     console.log("Password:", password);
-    alert('Button clicked!');
     navigate("/mapp")
   };
 

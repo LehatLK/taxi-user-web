@@ -1,0 +1,31 @@
+.map-container {
+    display: flex;
+  }
+  
+  .link-section {
+    margin-left: 20px; /* Adjust the margin as needed */
+  }
+  
+  .link-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .link-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .link-section li {
+    margin-bottom: 5px;
+  }
+  
+  .link-section a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .link-section a:hover {
+    text-decoration: underline;
+  }
+  
