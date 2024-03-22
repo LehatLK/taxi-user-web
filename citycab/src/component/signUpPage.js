@@ -6,6 +6,8 @@ function SecondPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const registerURL = "https://api-hdzvzie4ya-uc.a.run.app/api/register/user";
+ 
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -19,18 +21,45 @@ function SecondPage() {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Password:", password);
-    // You can add further processing, such as sending the data to a backend server
+    // Constructing the user data object
+    const userData = {
+      email,
+      name,
+      password,
+    };
+
+    // POST request to registerURL with the user data
+    try {
+      const response = await fetch(registerURL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+      });
+
+      if (response.ok) {
+        // Handle success response
+        const data = await response.json();
+        console.log('Registration successful:', data);
+        alert("You have succesfully signed up!!");
+        // You can redirect the user or clear the form here
+      } else {
+        // Handle server errors or invalid responses
+        console.error('Registration failed:', response.statusText);
+        alert("Registration failed or youre already signed up!!");
+      }
+    } catch (error) {
+      // Handle network errors
+      console.error('Network error:', error);
+      alert("Network error!!");
+    }
   };
 
   return (
     <div className='signupContainer'>
-      
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -64,19 +93,19 @@ function SecondPage() {
           />
         </div>
         <a href="#"
-      className='forgotPassword'
-       onClick={() => alert('Forgotten password clicked')
-       }>Forgot your password?</a>
-      <button type="submit" className='signup-button'>Sign Up</button>
-      <div> {/* Wrap the link in a div */}
-        <a
-          href="#"
-          className='mobilbankid'
+          className='forgotPassword'
           onClick={() => alert('Forgotten password clicked')}
-        >
-          Or continue with Mobil BankID
-        </a>
-      </div>
+        >Forgot your password?</a>
+        <button type="submit" className='signup-button'>Sign Up</button>
+        <div>
+          <a
+            href="#"
+            className='mobilbankid'
+            onClick={() => alert('Mobile BankID clicked')}
+          >
+            Or continue with Mobil BankID
+          </a>
+        </div>
       </form>
     </div>
   );

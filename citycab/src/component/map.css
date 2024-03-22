@@ -2,8 +2,8 @@
     position: relative;
     width: 60%;
     height: 60vh; /* Minska höjden för att ge mer plats */
-  }
   
+  }
   .map {
     position: absolute;
     width: 100%;
@@ -19,4 +19,4 @@
   .leaflet-control-container {
     margin: 10px; /* Justera avståndet till kanten */
   }
-  
+    
