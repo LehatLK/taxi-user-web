@@ -1,17 +1,18 @@
 import React from 'react';
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MappHeader from './mappheader';
+import Header from './header';
 import './mapp.css'
 import Map from './map';
 
 function Mapp() {
   return (
+   
     <div>
-    <MappHeader />
+     <Header />
     <div className="map-container">
       <Map />
       <div className="link-section">
-        <h2>Clickable Links</h2>
+        <h2>profile</h2>
         <ul>
           <li><a href="#">My Trips</a></li>
           <li><a href="#">My Profile</a></li>

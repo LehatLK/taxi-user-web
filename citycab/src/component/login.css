@@ -3,12 +3,15 @@
 .password{
     width: 40%;
     margin: 10px auto;
+   
 }
+
 .loginContainer{
     text-align: center;
 }
 .linksContainer{
     text-align: center;
+    
 }
 .google-login-button {
     background-color: #e9f0f4;
@@ -16,7 +19,7 @@
     width: 43%;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     margin: 10px auto; /* Optional margin */
   }
@@ -30,6 +33,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    background-color: #e9f0f4;
 
   }
   .email {
@@ -38,6 +42,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    background-color: #e9f0f4;
+    
 
   }
   .login-button {
@@ -48,14 +54,52 @@
     font-size: 15px;
 
   }
-  .forgotPassword, .signupLink {
-    color: #007bff; /* Link color */
+  .forgotPassword, 
+  .signupLink,
+  .mobilbankid {
     text-decoration: none; /* Remove underline */
     display: block; /* Ensure each link appears on its own line */
-    margin-top: 10px; /* Add spacing between the links */
+    margin-bottom: 10px; /*  Add spacing between the links */
+    
+    padding-right: 30%;
+    margin-top: 5px;
+    
+
+   
   }
+
+  .signupLink,
+  .mobilbankid
+  {
+    padding-right: 27%;
+    
+    
+  }
+ 
+
+ 
   
   .forgotPassword:hover, .signupLink:hover {
     text-decoration: underline; /* Underline the link on hover */
   }
+  
+
+  
+ .email-form h5 {
+  
+    padding-right: 38%;
+    margin-top: 5px;
+    
+    
+  
+  }
+
+  .password-form h5 {
+  
+    padding-right: 36%;
+    margin-top: 5px;
+  
+  }
+  
+
   

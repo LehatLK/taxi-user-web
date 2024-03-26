@@ -1,6 +1,7 @@
 // SecondPage.js
 import React, { useState } from 'react';
 import './signUpPage.css';
+import Header from './header';
 
 function SecondPage() {
   const [name, setName] = useState('');
@@ -59,6 +60,11 @@ function SecondPage() {
   };
 
   return (
+
+    <div> 
+    
+    <Header />
+
     <div className='signupContainer'>
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
@@ -107,6 +113,7 @@ function SecondPage() {
           </a>
         </div>
       </form>
+    </div>
     </div>
   );
 }

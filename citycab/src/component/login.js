@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './login.css';
 import { Link, useNavigate } from 'react-router-dom';
+import Header from './header';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -26,13 +27,20 @@ function Login() {
   };
 
   return (
+<div>
+    <Header />
     <div className='loginContainer'>
-      <h2>Login</h2>
+      <h1>Welcome to City Cab</h1>
       <button className="google-login-button" onClick={() => alert("Login with Google clicked")}>
-        Login with Google
+       Sign in with Google
       </button>
+
       <form onSubmit={handleSubmit}>
-        <div>
+        
+        <div className='email-form'>
+        <h5>Email</h5> 
+
+
         <input
         className='email'
             type="email"
@@ -42,7 +50,15 @@ function Login() {
             required
           />
         </div>
+
+        <div className='password-form'>
+        <h5>Password</h5> 
+
+        
+        
         <div>
+
+       
           <input
           className='password'
             type="password"
@@ -51,19 +67,37 @@ function Login() {
             onChange={handlePasswordChange}
             required
           />
-        </div>
-        <button type="submit" className="login-button">Sign in</button> {/* Login button */}
-      </form>
-      <div className='linksContainer'>
+          </div>
+
+          <div className='linksContainer'>
+          
       <a href="#"
       className='forgotPassword'
        onClick={() => alert('Forgotten password clicked')
        }>Forgot your password?</a>
       </div>
+
+        </div>
+        <button type="submit" className="login-button">Sign in</button> {/* Login button */}
+        </form>
+
+      <div>
+          <a
+            href="#"
+            className='mobilbankid'
+            onClick={() => alert('Mobile BankID clicked')}
+          >
+            Or continue with Mobil BankID
+          </a>
+        </div>
+      
       <div className='linksContainer'>
         <Link to="/second-page" className='signupLink'>Don't have an account? Sign up</Link>
         </div>
     </div>
+    </div>
+
+
   );
 }
 
