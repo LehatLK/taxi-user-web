@@ -66,10 +66,15 @@ function SecondPage() {
     <Header />
 
     <div className='signupContainer'>
-      <h2>Sign Up</h2>
+      <h2>Welcome to City Cab</h2>
       <form onSubmit={handleSubmit}>
         <div>
+
+        <div className='name-signup-form'>
+  <h5>Name</h5>
+
           <input
+          
             type="text"
             placeholder="Name"
             value={name}
@@ -77,8 +82,13 @@ function SecondPage() {
             required
             className='name'
           />
+          </div>
         </div>
         <div>
+
+        <div className='email-signup-form'>
+  <h5>Email</h5>
+
           <input
             type="email"
             placeholder="Email"
@@ -87,8 +97,14 @@ function SecondPage() {
             required
             className='email'
           />
+          </div>
+
         </div>
         <div>
+
+        <div className='password-signup-form'>
+  <h5>Password</h5>
+
           <input
             type="password"
             placeholder="Password"
@@ -97,6 +113,7 @@ function SecondPage() {
             required
             className='password'
           />
+          </div>
         </div>
         <a href="#"
           className='forgotPassword'

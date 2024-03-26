@@ -51,3 +51,23 @@
     text-decoration: underline;
   }
   
+  .name-signup-form h5{
+    padding-right: 38%;
+    margin-top: 5px;
+    
+    
+  }
+  
+  .email-signup-form h5{
+    padding-right: 38%;
+    margin-top: 5px;
+    
+    
+  }
+
+  .password-signup-form h5{
+    padding-right: 36%;
+    margin-top: 5px;
+    
+    
+  }
