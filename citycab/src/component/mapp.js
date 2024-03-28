@@ -14,7 +14,7 @@ function Mapp() {
       <div className="link-section">
         <h2>profile</h2>
         <ul>
-          <li><a href="#">My Trips</a></li>
+          <li><a href="mytrips">My Trips</a></li>
           <li><a href="#">My Profile</a></li>
           <li><a href="#">Payments</a></li>
         </ul>

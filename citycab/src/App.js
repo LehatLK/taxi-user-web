@@ -5,16 +5,18 @@ import Login from './component/login';
 import SecondPage from './component/signUpPage';
 import Mapp from './component/mapp';
 import './App.css';
+import MyTrips from './component/mytrips';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        
+        <Header />
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route path="/second-page" element={<SecondPage />} />
           <Route path="/mapp" element={<Mapp />} />
+          <Route path="/mytrips" element={<MyTrips />} />
           {/* <Route path="/map" element={<Map />} /> */}
         </Routes>
       </div>
@@ -23,4 +25,3 @@ function App() {
 }
 
 export default App;
-
