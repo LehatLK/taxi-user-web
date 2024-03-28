@@ -1,0 +1,46 @@
+/* MyTrips.css */
+.my-trips-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.map-container {
+  flex: 1; /* Make map take the available space */
+}
+
+.trip-list-container {
+  flex: 0; /* Make sure the trip list doesn't grow beyond its content */
+  padding: 20px;
+  background-color: white; /* or any color you prefer */
+}
+
+.trip-list-title {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc; /* add a line under the title */
+  text-align: center;
+}
+
+.trip-list {
+  overflow-y: auto; /* Make trip list scrollable if it overflows */
+}
+
+.trip-entry {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee; /* Separate the trip entries */
+}
+
+.trip-details,
+.trip-action {
+  padding: 5px 0; /* Add some padding */
+}
+
+.trip-arrow {
+  font-size: 24px; /* Adjust the size of the arrow as needed */
+  color: #000; /* Change the color if needed */
+}
+
+/* Add media queries for responsiveness if necessary */

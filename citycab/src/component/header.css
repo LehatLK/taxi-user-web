@@ -1,49 +1,36 @@
-.App-header {
-  min-height: 20px; 
-  background-color: #ffffff; 
+.app-header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between; 
-  padding: 15px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); 
-  position: fixed; 
-  width: 100%; 
-  z-index: 1000; 
+  padding: 1rem;
+  background-color: #f8f9fa; /* Light gray background */
 }
 
-.App-logo {
-  height: 60px; 
-  margin-right: 20px; 
-}
-
-.App-header-text {
+.app-title {
+  font-size: 1.5rem;
+  color: #000;
   font-weight: bold;
-  font-size: 1.0rem;
-  color: rgb(0, 0, 0);
+  margin: 0;
 }
 
-.header-nav a {
+.header-nav {
+  display: flex;
+}
+
+.nav-link {
   text-decoration: none;
-  color: #333;
-  padding: 0 15px;
+  color: #000;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  border-bottom: 3px solid transparent; /* Invisible border to match the layout height even when not active */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  border-bottom: 3px solid blue; /* Highlight on hover/focus */
 }
 
 .help-link {
-  font-size: 1rem;
-  color: #007bff;
-  text-decoration: none;
-  padding: 16px 24px; 
-  border-radius: 4px;
-  margin-right: 40px;
-  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s; /* Added box-shadow to transition */
-  display: inline-block;
-  box-sizing: border-box; 
+  margin-left: auto; /* Pushes the help link to the right */
 }
-.help-link:hover, .help-link:focus {
-  color: #0056b3;
-  background-color: #d0dcf5;
-  box-shadow: 0px 0 1px 4px #d0dcf5; 
-}
-
-
