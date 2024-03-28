@@ -1,30 +1,54 @@
-.map-container {
-    display: flex;
-  }
+
+.map-content {
+  display: flex;
+  height: calc(100vh - 60px); 
+}
+
+
+.map-link-section {
+  width: 230px; 
+  height: calc(100vh - 60px); 
+  overflow-y: auto; 
+  background: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-link-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+}
+
+.map-link-section li {
+  background-color: #ffffff;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s; 
+  border-radius: 1cm;
+  padding-right: 115px;
+}
+
+.map-link-section li a {
+  text-decoration: none; 
+  color: #1a1818; 
+  display: block; 
+  font-size: 1.2em;
+}
+
+.map-link-section li:hover {
+  background-color: #dcdcdc;}
+
+
+
   
-  .link-section {
-    margin-left: 20px; /* Adjust the margin as needed */
-  }
-  
-  .link-section h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .link-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .link-section li {
-    margin-bottom: 5px;
-  }
-  
-  .link-section a {
-    text-decoration: none;
-    color: blue;
-  }
-  
-  .link-section a:hover {
-    text-decoration: underline;
-  }
+.map-link-section li.my-trips {
+  display: flex; 
+  align-items: center; 
+  margin-left: 10px;
+}
+
+.map-link-section li.my-trips img {
+  margin-right: 5px; 
+}
