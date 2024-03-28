@@ -9,7 +9,6 @@ import Map from './map';
 function Mapp() {
   return (
     <div className="map-app-container">
-      <Header />
       <div className="map-content">
         <Map />
         <div className="map-link-section">

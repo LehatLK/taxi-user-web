@@ -28,7 +28,6 @@ function Login() {
 
   return (
 <div>
-    <Header />
     <div className='loginContainer'>
       <h1>Welcome to City Cab</h1>
       <button className="google-login-button" onClick={() => alert("Login with Google clicked")}>

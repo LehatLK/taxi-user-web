@@ -62,8 +62,7 @@ function SecondPage() {
   return (
 
     <div> 
-    
-    <Header />
+  
 
     <div className='signupContainer'>
       <h2>Welcome to City Cab</h2>
