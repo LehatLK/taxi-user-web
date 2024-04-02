@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './MyTrips.css'; // Make sure to create and style this CSS file
 import Map from './map.jsx'; // Import your Map component
+import Mapp from './mapp.js';
 
 function MyTrips() {
   const [trips, setTrips] = useState([
@@ -9,8 +10,12 @@ function MyTrips() {
     // ... other trips
   ]);
 
+
+
   return (
+    
     <div className="my-trips-page">
+    <Mapp />
       <Map /> {/* Render your map component */}
       <div className="trip-list-container">
         <h2 className="trip-list-title">My Trips</h2>
@@ -28,7 +33,9 @@ function MyTrips() {
           ))}
         </div>
       </div>
+      
     </div>
+    
   );
 }
 

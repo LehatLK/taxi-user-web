@@ -19,27 +19,12 @@
 
 .nav-link {
   text-decoration: none;
-<<<<<<< HEAD
-  padding: 16px 24px; 
-  border-radius: 4px;
-  margin-right: 40px;
-  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s; 
-  display: inline-block;
-  box-sizing: border-box; 
-}
-.help-link:hover, .help-link:focus {
-  color: #0056b3;
-  background-color: #d0dcf5;
-  box-shadow: 0px 0 1px 4px #d0dcf5; 
-} 
-=======
   color: #000;
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   font-weight: bold;
   border-bottom: 3px solid transparent; /* Invisible border to match the layout height even when not active */
 }
->>>>>>> b1406f4af95b641eb255fc5f49ae8baec1fb7dc7
 
 .nav-link:hover,
 .nav-link:focus {
