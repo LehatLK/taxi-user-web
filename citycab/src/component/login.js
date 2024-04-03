@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from './header';
-
+import axios from "axios"
 function Login() {
+  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -18,12 +19,34 @@ function Login() {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle login logic here
-    console.log("Email:", email);
-    console.log("Password:", password);
-    navigate("/mapp")
+
+    // API endpoint
+    const apiEndpoint = "https://api-hdzvzie4ya-uc.a.run.app/api/login/user";
+
+    try {
+      // Make a POST request to login
+      const response = await axios.post(apiEndpoint, {
+        email: email,
+        password: password
+      });
+
+      console.log("Login response:", response.data);
+      // Assuming the API returns a field called `token` in the response
+      if (response.data.token) {
+        // Store the token for future requests (e.g., in localStorage)
+        localStorage.setItem('authToken', response.data.token);
+        // Redirect the user to the '/mapp' route after successful login
+        navigate("/mapp");
+      } else {
+        // Handle errors or invalid login credentials
+        alert("Failed to log in. Please check your credentials.");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("An error occurred while logging in.");
+    }
   };
 
   return (
