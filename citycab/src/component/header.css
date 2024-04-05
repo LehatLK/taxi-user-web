@@ -28,7 +28,7 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  border-bottom: 3px solid blue; /* Highlight on hover/focus */
+  border-bottom: 3px solid #ffb700; /* Highlight on hover/focus */
 }
 
 .help-link {
