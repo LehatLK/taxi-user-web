@@ -33,14 +33,10 @@ function Login() {
       });
 
       console.log("Login response:", response.data);
-      // Assuming the API returns a field called `token` in the response
       if (response.data.token) {
-        // Store the token for future requests (e.g., in localStorage)
         localStorage.setItem('authToken', response.data.token);
-        // Redirect the user to the '/mapp' route after successful login
         navigate("/mapp");
       } else {
-        // Handle errors or invalid login credentials
         alert("Failed to log in. Please check your credentials.");
       }
     } catch (error) {

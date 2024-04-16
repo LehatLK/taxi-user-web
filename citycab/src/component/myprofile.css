@@ -7,18 +7,18 @@
   border-radius: 10px;
   max-width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: auto; /* Centrerar boxen på sidan */
+  margin: auto; 
   text-align: center;
 
 }
 
 .profile-picture {
   border-radius: 50%;
-  width: 100px; /* Storlek på profilbilden */
+  width: 100px; 
   height: 100px;
   object-fit: cover;
   margin-bottom: 20px;
-  position: relative; /* För att positionera uppladdningsknappen */
+  position: relative; 
   margin-bottom: 20px;
 }
 
@@ -28,7 +28,6 @@
   border-radius: 50%;
 }
 
-/* Döljer den faktiska filväljaren och visar en anpassad knapp istället */
 .profile-picture input[type="file"] {
   font-size: 14px;
   margin-top: 10px;
@@ -42,25 +41,25 @@
 }
 
 
-/* Stil för 'Välj fil'-knappen */
+
 .file-upload-button {
   background-color: #ffb700;
   color: white;
   padding: 10px 20px;
-  margin-top: 20px; /* Lägg till marginal över knappen */
+  margin-top: 20px; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   outline: none;
-  display: inline-block; /* Så att knappen kan centreras med text-align */
+  display: inline-block; 
 }
 
 .file-upload-button:hover {
   background-color: #ffb700;
 }
 
-/* Dölj den faktiska filväljaren */
+
 .file-upload-input {
   display: none;
 }
@@ -68,24 +67,24 @@
 
 .user-info {
   display: flex;
-  flex-direction: column; /* Ändrar tillbaka till kolumn-layout */
-  align-items: flex-start; /* Startar innehållet från vänsterkanten */
+  flex-direction: column; 
+  align-items: flex-start; 
   width: 100%;
   margin-bottom: 15px;
 }
 
 .user-info label {
-  margin-bottom: 5px; /* Lägger till utrymme mellan etikett och input-fält */
+  margin-bottom: 5px;  
   font-weight: bold;
-  text-align: left; /* Justerar texten till vänster */
+  text-align: left; 
 }
 
 .user-info input {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 100%; /* Bredden på inmatningsfältet till 100% av förälderns bredd */
-  box-sizing: border-box; /* Inkluderar padding och border i breddberäkningen */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 
@@ -102,6 +101,20 @@
   transition: background-color 0.3s ease;
 }
 
-.profile-button:hover {
+.file-upload-button {
   background-color: #ffb700;
+  color: white;
+  padding: 8px 16px; /* Adjust the padding to change the size of the button */
+  margin-top: 10px; /* Adjust margin to position it correctly under the image */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  display: block; /* Make the button a block element */
+  text-align: center; /* Center the text in the button */
+}
+
+.file-upload-button:hover {
+  background-color: #e6a600;
 }

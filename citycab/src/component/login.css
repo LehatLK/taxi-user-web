@@ -57,41 +57,30 @@
   .forgotPassword, 
   .signupLink,
   .mobilbankid {
-    text-decoration: none; /* Remove underline */
-    display: block; /* Ensure each link appears on its own line */
-    margin-bottom: 10px; /*  Add spacing between the links */
-    
-    padding-right: 30%;
-    margin-top: 5px;
-    
-
-   
+    text-decoration: none; 
+    margin: 10px auto; 
+    width: 43%; 
   }
+  
 
   .signupLink,
-  .mobilbankid
-  {
-    padding-right: 27%;
-    
-    
-  }
+.mobilbankid {
+  padding-right: 0;
+}
  
 
  
   
   .forgotPassword:hover, .signupLink:hover {
-    text-decoration: underline; /* Underline the link on hover */
+    text-decoration: underline; 
   }
   
 
   
- .email-form h5 {
-  
-    padding-right: 38%;
-    margin-top: 5px;
-    
-    
-  
+  .email-form h5, .password-form h5 {
+    padding-right: 0; 
+    margin: auto; 
+    width: 40%; 
   }
 
   .password-form h5 {
