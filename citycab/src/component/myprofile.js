@@ -33,7 +33,9 @@ function MyProfile() {
       <form onSubmit={handleProfileUpdate}>
         <div className="profile-picture">
           <img src={profilePictureUrl || 'default_profile_picture_link'} alt="Profile" />
-          <input id="file-upload" type="file" onChange={handleProfilePictureChange} className="file-upload-input" />
+          {/* Updated the class name here */}
+          <input id="file-upload" type="file" onChange={handleProfilePictureChange} className="fileSelectorButton" style={{display: 'none'}} />
+          {/* Adjusted the button to act as a label for the file input */}
           <label htmlFor="file-upload" className="file-upload-button">Välj profilbild</label>
         </div>
 

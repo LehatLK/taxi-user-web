@@ -104,15 +104,17 @@
 .file-upload-button {
   background-color: #ffb700;
   color: white;
-  padding: 8px 16px; /* Adjust the padding to change the size of the button */
-  margin-top: 10px; /* Adjust margin to position it correctly under the image */
+  padding: 6px 12px; /* Reduced padding for a smaller button */
+  margin-top: 10px; /* Adjusted top margin for proper spacing */
+  margin-bottom: 15px; /* Added bottom margin for spacing */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   outline: none;
-  display: block; /* Make the button a block element */
-  text-align: center; /* Center the text in the button */
+  display: block;
+  text-align: center;
+  font-size: 10px; /* Reduced font size for a smaller button text */
 }
 
 .file-upload-button:hover {
