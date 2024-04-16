@@ -88,7 +88,7 @@ function MyProfile() {
       <h1>Min Profil</h1>
       <form onSubmit={handleProfileUpdate}>
         <div className="profile-picture">
-        <img src={profilePictureUrl || 'default_profile_picture_link'} alt="" />
+        <img src={profilePictureUrl || 'default_profile_picture_link'} alt="Profile" />
 
           <label htmlFor="file-upload" className="file-upload-button">Välj profilbild</label>
           <input id="file-upload" type="file" onChange={handleProfilePictureChange} style={{ display: 'none' }} />
