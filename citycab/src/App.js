@@ -7,6 +7,7 @@ import Mapp from './component/mapp';
 import MyProfile from './component/myprofile'; 
 import MyTrips from './component/mytrips';
 import './App.css';
+import Payment from './component/payment';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/mapp" element={<Mapp />} />
           <Route path="/mytrips" element={<MyTrips />} />
           <Route path="/myprofile" element={<MyProfile />} /> {/* Lägg till denna rad */}
+          <Route path="/payments" element={<Payment />} /> {/* Lägg till denna rad */}
         </Routes>
       </div>
     </Router>
