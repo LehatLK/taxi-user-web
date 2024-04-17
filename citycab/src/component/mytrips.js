@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import './MyTrips.css'; // Make sure to create and style this CSS file
 import Map from './map.jsx'; // Import your Map component
 import Mapp from './mapp.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { faTaxi } from '@fortawesome/free-solid-svg-icons';
+import BookRideButton from './button.js';
 
 function MyTrips() {
   const [trips, setTrips] = useState([
@@ -11,31 +15,33 @@ function MyTrips() {
   ]);
 
 
-
   return (
-    
+<div>
+    <Mapp /> 
+<div className="centered-container">
     <div className="my-trips-page">
-    <Mapp />
-      <Map /> {/* Render your map component */}
-      <div className="trip-list-container">
-        <h2 className="trip-list-title">My Trips</h2>
-        <div className="trip-list">
-          {trips.map(trip => (
-            <div key={trip.id} className="trip-entry">
-              <div className="trip-details">
-                <div className="trip-address">{trip.address}</div>
-                <div className="trip-time">{`${trip.time}, ${trip.date} with ${trip.companion}`}</div>
-              </div>
-              <div className="trip-action">
-                <span className="trip-arrow">→</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      
-    </div>
+
     
+      <BookRideButton />
+    <h2>My Trips</h2>
+
+      <div class="my-trips">
+    <div class="trip-list">
+      <div class="trip-item">
+        <div class="time-and-location">
+        <div className="time">
+            <FontAwesomeIcon icon={faClock} /> 6:45 PM, Monday June 19 with Ying
+          </div>
+          <div class="location">348 Fillmore St, San Francisco, CA</div>
+        </div>
+        <div class="arrow">→</div>
+      </div>
+
+    </div>
+  </div>
+    </div>
+    </div>
+    </div>
   );
 }
 

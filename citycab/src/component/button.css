@@ -1,0 +1,21 @@
+/* button.css */
+
+.book-a-ride {
+    background-color: #ffc107; /* Your button color */
+    border: none;
+    border-radius: 20px; /* Adjust for roundness */
+    padding: 10px 20px; /* Varies based on your size preference */
+    font-size: 16px; /* Your desired font-size */
+    color: black; /* Text color */
+    cursor: pointer; /* Makes it clear the button is clickable */
+    display: flex; /* For inline icon and text alignment */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    width: 20%; /* Makes the button one fifth of the page width */
+    text-align: left; /* Aligns text to the left within the button */
+  }
+  
+  .book-a-ride .svg-inline--fa {
+    margin-right: 8px; /* Space between the icon and the text */
+  }
+  

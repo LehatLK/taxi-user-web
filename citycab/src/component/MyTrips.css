@@ -1,3 +1,4 @@
+/* MyTrips.css */
 .my-trips-page {
   display: flex;
   flex-direction: column;
@@ -99,3 +100,83 @@
 .map-link-section li.my-trips img {
   margin-right: 5px; 
 }
+
+
+/* ... other styles ... */
+
+.my-trips {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.my-trips h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.trip-list {
+  list-style-type: none;
+}
+
+.trip-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.time-and-location {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Adjusted for visual appeal */
+}
+
+.time .fa-clock {
+  margin-right: 10px;
+  color: #333333; /* Match the icon color with the text */
+}
+
+.location {
+  color: #666666;
+  font-size: 0.9em;
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+  align-self: center; /* Center the arrow vertically */
+}
+
+/* CSS for Flexbox alignment */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center ; /* Center children vertically inside the container */
+  text-align: left; /* Ensures text within is aligned to the left */
+  flex-direction: column;
+  width: 50%;
+ /* Adds automatic margin on all sides, helping with centering */
+}
+
+.my-trips {
+  /* Add width or max-width as needed to prevent the container from stretching too wide */
+  width: 90%; /* Example width */
+}
+
+/* Make sure .time, .location, and other inner text elements inherit alignment */
+.time, .location, .arrow {
+  text-align: left;
+}
+
+
+/* ... */
+
