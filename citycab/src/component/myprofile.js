@@ -82,7 +82,7 @@ function MyProfile() {
 
   return (
     <div className="profile-container">
-      <h1>Min Profil</h1>
+      <h1 className="profile-title">Min Profil</h1>
       <form onSubmit={handleProfileUpdate}>
         <div className="profile-picture">
           <img src={profilePictureUrl || 'default_profile_picture_link'} alt="Profile" />
